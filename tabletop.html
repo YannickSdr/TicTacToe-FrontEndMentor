@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <link rel="stylesheet" href="./tictactoe.css">
+    <script type="module" src="./tictactoe.js"></script>
+  
+    <title>TicTacToe</title>
+  </head>
+
+  <body>
+    <header id="tabletop--header">
+        <img src="./assets/logo.svg" alt="cross-circle-logo">
+        <div id="turn">
+            <div id="turn-logo"></div>
+            <p>Turn</p>
+        </div>
+        <div id="restart">
+            <img src="./assets/icon-restart.svg" alt="restart-logo">
+        </div>
+        
+    </header>
+
+    <main id="tile-grid">
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+    </main>
+
+    <footer id="tabletop--footer">
+        <div id="pick-x">
+            <p class="player">x (You)</p>
+            <p class="score">14</p>
+        </div>
+        <div id="tie">
+            <p class="player">ties</p>
+            <p class="score">32</p>
+        </div>
+        <div id="pick-o">
+            <p class="player">O (cpu)</p>
+            <p class="score">11</p>
+        </div>
+    </footer>
+  </body>

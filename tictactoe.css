@@ -6,10 +6,13 @@
 body {
     background-color: #1A2A33;
     text-transform:uppercase;
-    margin: 0;
+    margin-right: 5%;
+    margin-left: 5%;
     font-family: "outfit";
     font-weight: bold;
     word-spacing: 3px;
+    letter-spacing: 1px;
+    width:90%
 }
 .x img {
    width: 60%;
@@ -19,26 +22,26 @@ body {
     width: 60%;
   }
 
-#owhite {
+#o-white {
     filter:invert(100%);
     filter:brightness(10%)
 }
 
 
-#xwhite {
+#x-white {
     filter:grayscale(80%)
 }
-#xoheader {
+#index--header {
     display:flex;
     justify-content: center;
     align-items: center;
     margin-top: 35%;
+    margin-bottom: 6%
 }
 
- #pickbox {
+ #pick-box {
     background-color: #1F3641;
-    margin: 2em 5.5%;
-    width: 87%;
+    width: 100%;
     height: 30%;
     display:flex;
     flex-direction: column;
@@ -47,7 +50,7 @@ body {
     box-shadow: 0px 0.4em #101b20;
 }
 
-#xoselect {
+#xo-select {
     background-color: #1A2A33;
     display: flex;
     flex-direction: row;
@@ -58,7 +61,7 @@ body {
     border-radius: 0.8em;
 } 
 
-#xselect {
+#x-select {
     border-radius: 0.5em;
     height: 75%;
     width:50%;
@@ -69,7 +72,7 @@ body {
     margin: 0.7em;
 }
 
-#oselect {
+#o-select {
     border-radius: 0.5em;
     height: 75%;
     width:50%;
@@ -80,7 +83,7 @@ body {
     margin: 0.7em;
 }
 
-#picktext {
+#pick-text {
     color: #A8BFC9;
     padding-top: 1em;
     font-size: 17px;
@@ -91,30 +94,137 @@ body {
     padding-bottom: 1em;
 }
 
-footer {
+#index--footer {
     display: flex;
     flex-direction: column;
 }
 
-#pickCPU {
+#pick-CPU {
     border: none;
     background-color: #F2B137;
-    width: 90%;
+    width: 100%;
     height: 4em;
-    margin: 0.8em 5.5%;
+    margin-top: 2.5em;
+    margin-bottom: 0.8em;
     border-radius: 0.8em;
     box-shadow: 0px 0.4em #c99330;
     font-weight: bolder;
-    
 }
 
-#pickplayer {
+#pick-player {
     border: none;
     background-color: #31C3BD;
-    width: 90%;
+    width:100%;
     height: 4em;
-    margin: 0.8em 5.5%;
+    margin-top: 0.8em;
+    margin-bottom: 0.8em;
     border-radius: 0.8em;
     box-shadow: 0px 0.4em #248d8a;
     font-weight: bolder;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+/* tabletop css *//* tabletop css *//* tabletop css *//* tabletop css */
+
+#tabletop--header {
+    margin-top:5% ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#turn {
+    color:#A8BFC9;
+    background-color:#1F3641;
+    width: 27%;
+    height: 2.5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10%;
+    box-shadow: 0px 0.25em #101b20;
+}
+
+#restart {
+    background-color: #A8BFC9;
+    width: 12%;
+    height: 2.5rem;
+    border-radius: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0.25em #798991;
+}
+
+#tile-grid {
+    margin-top:25%;
+    display:grid;
+    gap: 10%;
+    grid-template-columns: repeat(3, minmax(50px, 1fr))
+}
+
+.tile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1F3641;
+    padding: 45px;
+    border-radius: 10%;
+    box-shadow: 0px 0.50em #101b20;
+}
+
+#tabletop--footer {
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    gap: 10%;
+    margin-top: 25%;
+}
+
+#pick-x {
+    background-color: #31C3BD;
+    width: 26%;
+    height:4.5rem;
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+
+#tie {
+    background-color: #A8BFC9;
+    width:26%;
+    height:4.5rem;
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+}
+
+#pick-o {
+    background-color: #F2B137;
+    width: 26%;
+    height:4.5rem;
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+
+.player, .score {
+    margin: 1%;
+    font-size:0.9em;
+    word-spacing: normal;
+}
+
+.score {
+    font-weight: bolder;
+    font-size: 1.2em;
 }

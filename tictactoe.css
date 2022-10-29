@@ -1,0 +1,120 @@
+@font-face {
+    font-family: "outfit";
+    src: url(./assets/Outfit-VariableFont_wght.ttf);
+}
+
+body {
+    background-color: #1A2A33;
+    text-transform:uppercase;
+    margin: 0;
+    font-family: "outfit";
+    font-weight: bold;
+    word-spacing: 3px;
+}
+.x img {
+   width: 60%;
+}
+
+ .o img{
+    width: 60%;
+  }
+
+#owhite {
+    filter:invert(100%);
+    filter:brightness(10%)
+}
+
+
+#xwhite {
+    filter:grayscale(80%)
+}
+#xoheader {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35%;
+}
+
+ #pickbox {
+    background-color: #1F3641;
+    margin: 2em 5.5%;
+    width: 87%;
+    height: 30%;
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 0.8em;
+    box-shadow: 0px 0.4em #101b20;
+}
+
+#xoselect {
+    background-color: #1A2A33;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 90%;
+    height: 5.5em;
+    margin: 1em;
+    border-radius: 0.8em;
+} 
+
+#xselect {
+    border-radius: 0.5em;
+    height: 75%;
+    width:50%;
+    background-color: #1A2A33;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.7em;
+}
+
+#oselect {
+    border-radius: 0.5em;
+    height: 75%;
+    width:50%;
+    background-color: #A8BFC9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.7em;
+}
+
+#picktext {
+    color: #A8BFC9;
+    padding-top: 1em;
+    font-size: 17px;
+}
+
+#remember {
+    color: slategray;
+    padding-bottom: 1em;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+}
+
+#pickCPU {
+    border: none;
+    background-color: #F2B137;
+    width: 90%;
+    height: 4em;
+    margin: 0.8em 5.5%;
+    border-radius: 0.8em;
+    box-shadow: 0px 0.4em #c99330;
+    font-weight: bolder;
+    
+}
+
+#pickplayer {
+    border: none;
+    background-color: #31C3BD;
+    width: 90%;
+    height: 4em;
+    margin: 0.8em 5.5%;
+    border-radius: 0.8em;
+    box-shadow: 0px 0.4em #248d8a;
+    font-weight: bolder;
+}

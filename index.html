@@ -1,47 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <link rel="stylesheet" href="./tictactoe.css">
+    <script type="module" src="./tictactoe.js"></script>
   
-  <title>Frontend Mentor | Tic Tac Toe</title>
-</head>
-<body>
+    <title>TicTacToe</title>
+  </head>
 
-  <!-- New game menu start -->
+  <body>
 
-  Pick player 1's mark
-  Remember: X goes first
+    <header>
+      <div id="xoheader">
+        <div id="xo">
+          <img src="./assets/logo.svg" alt="logo">
+        </div>
+      </div>
+    </header>
 
-  New Game (vs CPU)
-  New Game (vs player)
+    <main>
+      <div id="pickbox">
+        <p id="picktext">Pick player 1's mark</p>
+        <div id="xoselect">
+          <div id="xselect">
+            <div class="x" id="xwhite">
+              <img src="./assets/icon-x.svg" alt="lettre-x">
+            </div>
+          </div>
+          <div id="oselect">
+            <div class="o" id="owhite">
+              <img src="./assets/icon-o.svg" alt="lettre-o">
+            </div>
+          </div>
+        </div>
+        <p id="remember">Remember : x goes first</p>
+      </div>
+    </main>
 
-  <!-- New game menu end -->
+    <footer>
+      <button id="pickCPU">NEW GAME (VS CPU)</button>
+      <button id="pickplayer">NEW GAME (VS PLAYER)</button>
+    </footer>
 
-  <!-- Game board start -->
-
-  <!-- x/o icon --> turn
-
-  X (You) <!-- Your score -->
-  Ties <!-- Ties score -->
-  X (CPU) <!-- CPU score -->
-
-  Oh no, you lost
-  You won!
-  Player <!-- 1/2 --> wins!
-
-  <!-- x/o icon --> takes the round
-  Round tied
-  Restart game?
-
-  Quit
-  Next round
-  No, cancel
-  Yes, restart
-
-  <!-- Game board end -->
-
-</body>
+  </body>
 </html>
